@@ -1,6 +1,7 @@
 import React from "react";
 import { BiUser, BiCart } from "react-icons/bi";
 import { Link } from "react-scroll";
+import { BsGrid } from "react-icons/bs";
 
 const Header = () => {
   const scrollLinks = [
