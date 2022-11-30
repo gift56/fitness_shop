@@ -24,11 +24,11 @@ const Header = () => {
 
   const cartIcons = [
     {
-      icon: <BiUser />,
+      icon: <BiUser className="w-[20px] h-[20px]" />,
       text: "Login",
     },
     {
-      icon: <BiCart />,
+      icon: <BiCart className="w-[20px] h-[20px]" />,
       text: "Cart",
     },
   ];
@@ -57,7 +57,7 @@ const Header = () => {
           </nav>
           <div className="flex gap-5 items-center">
             {cartIcons.map(({ icon, text }, i) => (
-              <div className="flex items-center gap-2" key={i}>
+              <div className="flex items-center gap-2 cursor-pointer" key={i}>
                 <span>{text}</span>
                 {icon}
               </div>
