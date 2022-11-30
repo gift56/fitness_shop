@@ -30,7 +30,11 @@ const Header = () => {
             </Link>
           </h2>
           <nav className="flex items-center gap-3">
-            <Link to="" spy={true} smooth={true}></Link>
+            {scrollLinks.map(({ href, text }, i) => (
+              <Link to={href} spy={true} smooth={true} key={i}>
+                {text}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>
