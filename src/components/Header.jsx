@@ -59,8 +59,11 @@ const Header = () => {
           </nav>
           <div className="flex gap-5 items-center">
             {cartIcons.map(({ icon, text }, i) => (
-              <div className="flex items-center gap-2 cursor-pointer" key={i}>
-                <span className="hidden lg:flex text-black font-normal text-[18px]">
+              <div
+                className="flex items-center gap-2 cursor-pointer hover:text-[#FF7B7B] transition-all"
+                key={i}
+              >
+                <span className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all">
                   {text}
                 </span>
                 {icon}
