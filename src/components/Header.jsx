@@ -29,9 +29,15 @@ const Header = () => {
               My <span className="text-primary">Store.</span>
             </Link>
           </h2>
-          <nav className="flex items-center gap-3">
+          <nav className="flex items-center gap-6">
             {scrollLinks.map(({ href, text }, i) => (
-              <Link to={href} spy={true} smooth={true} key={i}>
+              <Link
+                to={href}
+                spy={true}
+                smooth={true}
+                key={i}
+                className="text-black font-normal text-[18px] cursor-pointer linkHover relative"
+              >
                 {text}
               </Link>
             ))}
