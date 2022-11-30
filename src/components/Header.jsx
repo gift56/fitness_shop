@@ -36,7 +36,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 bg-[#FAFAFA] z-10">
+    <header className="sticky top-0 bg-[#FAFAFA] z-[9999999]">
       <div className="container">
         <div className="flex justify-between items-center w-full py-4 relative">
           <h2 className="text-black font-semibold lg:text-2xl text-xl cursor-pointer">
@@ -85,7 +85,7 @@ const Header = () => {
           </div>
           <nav
             className={`lg:hidden items-start gap-6 flex flex-col absolute top-[-100vh] bg-[#FAFAFA] w-full px-3 py-4 z-0 transition-all duration-300 ${
-              mobileScreen ? "!top-[47px] !z-0" : ""
+              mobileScreen ? "!top-[47px] !z-[999999]" : ""
             }`}
           >
             {scrollLinks.map(({ href, text }, i) => (
