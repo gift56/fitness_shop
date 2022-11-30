@@ -42,7 +42,7 @@ const Header = () => {
               My <span className="text-primary">Store.</span>
             </Link>
           </h2>
-          <nav className="flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6">
             {scrollLinks.map(({ href, text }, i) => (
               <Link
                 to={href}
@@ -58,7 +58,9 @@ const Header = () => {
           <div className="flex gap-5 items-center">
             {cartIcons.map(({ icon, text }, i) => (
               <div className="flex items-center gap-2 cursor-pointer" key={i}>
-                <span>{text}</span>
+                <span className="hidden lg:flex text-black font-normal text-[18px]">
+                  {text}
+                </span>
                 {icon}
               </div>
             ))}
