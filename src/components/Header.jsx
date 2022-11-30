@@ -24,7 +24,7 @@ const Header = () => {
     <header className="sticky top-0 bg-[#FAFAFA] z-10">
       <div className="container">
         <div className="flex justify-between items-center w-full py-4">
-          <h2 className="text-black font-semibold lg:text-2xl text-xl">
+          <h2 className="text-black font-semibold lg:text-2xl text-xl cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
               My <span className="text-primary">Store.</span>
             </Link>
