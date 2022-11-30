@@ -15,8 +15,12 @@
     content: "";
     position: absolute;
     bottom: 3px;
-    width: 100%;
+    width: 0%;
     height: 3px;
     background-color: #ffdf7b;
     border-radius: 18px;
+    transition: all 500ms ease-in-out;
+}
+.linkHover:hover::before {
+    width: 100%;
 }
