@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiUser, BiCart } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { BsGrid } from "react-icons/bs";
 
 const Header = () => {
+  const [mobileScreen, setMobileScreen] = useState(false);
   const scrollLinks = [
     {
       href: "home",
