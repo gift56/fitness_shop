@@ -80,6 +80,21 @@ const Header = () => {
               />
             )}
           </div>
+          {mobileScreen ? (
+            <nav className="lg:hidden items-start gap-6 flex flex-col absolute top-[47px] mt-2">
+              {scrollLinks.map(({ href, text }, i) => (
+                <Link
+                  to={href}
+                  spy={true}
+                  smooth={true}
+                  key={i}
+                  className="text-black font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all before:duration-300"
+                >
+                  {text}
+                </Link>
+              ))}
+            </nav>
+          ) : null}
         </div>
       </div>
     </header>
