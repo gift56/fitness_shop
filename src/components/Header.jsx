@@ -36,7 +36,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 key={i}
-                className="text-black font-normal text-[18px] cursor-pointer linkHover relative pb-1 hover:text-[#FF7B7B]"
+                className="text-black font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all"
               >
                 {text}
               </Link>
