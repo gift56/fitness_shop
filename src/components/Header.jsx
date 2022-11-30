@@ -4,7 +4,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-[#FAFAFA] z-10 h-[50px]">
       <div className="container">
-        <div className="flex justify-between items-center w-full"></div>
+        <div className="flex justify-between items-center w-full">
+            <h2></h2>
+        </div>
       </div>
     </header>
   );
