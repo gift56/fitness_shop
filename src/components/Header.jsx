@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiUser, BiCart } from "react-icons/bi";
 import { Link } from "react-scroll";
-import { BsGrid } from "react-icons/bs";
+import { BsGrid, BsDoorClosed } from "react-icons/bs";
 
 const Header = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-[#FAFAFA] z-10">
       <div className="container">
-        <div className="flex justify-between items-center w-full py-4">
+        <div className="flex justify-between items-center w-full py-4 relative">
           <h2 className="text-black font-semibold lg:text-2xl text-xl cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
               My <span className="text-primary">Store.</span>
@@ -66,6 +66,19 @@ const Header = () => {
                 {icon}
               </div>
             ))}
+          </div>
+          <div className="lg:hidden">
+            {mobileScreen ? (
+              <BsDoorClosed
+                className="w-[18px] h-[18px]"
+                onClick={() => setMobileScreen((prev) => !prev)}
+              />
+            ) : (
+              <BsGrid
+                className="w-[18px] h-[18px]"
+                onClick={() => setMobileScreen((prev) => !prev)}
+              />
+            )}
           </div>
         </div>
       </div>
