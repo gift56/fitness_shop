@@ -1,4 +1,5 @@
 import React from "react";
+import { BiUser, BiCart } from "react-icons/bi";
 import { Link } from "react-scroll";
 
 const Header = () => {
@@ -20,6 +21,18 @@ const Header = () => {
       text: "Sale",
     },
   ];
+
+  const cartIcons = [
+    {
+      icon: <BiUser />,
+      text: "Login",
+    },
+    {
+      icon: <BiCart />,
+      text: "Cart",
+    },
+  ];
+
   return (
     <header className="sticky top-0 bg-[#FAFAFA] z-10">
       <div className="container">
@@ -42,6 +55,14 @@ const Header = () => {
               </Link>
             ))}
           </nav>
+          <div className="flex gap-5 items-center">
+            {cartIcons.map(({ icon, text }, i) => (
+              <div className="flex items-center gap-2" key={i}>
+                <span>{text}</span>
+                {icon}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </header>
