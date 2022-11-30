@@ -11,6 +11,12 @@
     width: 87%;
     margin: 0 auto;
 }
-.linkHover{
-    
+.linkHover::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffdf7b;
+    border-radius: 18px;
 }
