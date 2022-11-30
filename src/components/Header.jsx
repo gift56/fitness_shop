@@ -80,7 +80,6 @@ const Header = () => {
               />
             )}
           </div>
-
           <nav
             className={`lg:hidden items-start gap-6 flex flex-col absolute top-[-100vh] bg-[#FAFAFA] w-full px-3 py-4 z-0 transition-all duration-300 ${
               mobileScreen ? "!top-[47px] !z-0" : ""
