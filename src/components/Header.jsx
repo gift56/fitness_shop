@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  return <header className="sticky top-0 bg-[#FAFAFA] z-10">Header</header>;
+};
 
-export default Header
+export default Header;
