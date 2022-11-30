@@ -2,7 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-[#FAFAFA] z-10 h-[50px]">Header</header>
+    <header className="sticky top-0 bg-[#FAFAFA] z-10 h-[50px]">
+      <div className="container">
+        <div className="flex justify-between items-center w-full"></div>
+      </div>
+    </header>
   );
 };
 
