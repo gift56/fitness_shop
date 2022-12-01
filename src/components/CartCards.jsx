@@ -70,6 +70,7 @@ const CartCards = () => {
                 <p className="font-medium text-xl text-black leading-[25px]">
                   {rate}
                 </p>
+                <div className="flex items-center justify-between w-full"></div>
               </div>
             </div>
           ))}
