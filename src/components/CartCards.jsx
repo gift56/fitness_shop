@@ -85,6 +85,10 @@ const CartCards = () => {
             </div>
           ))}
         </div>
+        <div>
+          <div></div>
+          <Button />
+        </div>
       </div>
     </section>
   );
