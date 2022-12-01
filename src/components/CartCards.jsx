@@ -87,7 +87,10 @@ const CartCards = () => {
         </div>
         <div className="flex items-center justify-center w-full relative mt-32">
           <div></div>
-          <Button text="View More" btnClass="" />
+          <Button
+            text="View More"
+            btnClass="bg-white !border !border-[#AAFAB2]"
+          />
         </div>
       </div>
     </section>
