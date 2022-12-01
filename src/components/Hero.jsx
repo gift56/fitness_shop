@@ -13,7 +13,9 @@ const Hero = () => {
             </h1>
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
-          <div className="flex-1"></div>
+          <div className="flex-1 relative">
+
+          </div>
         </div>
       </div>
     </section>
