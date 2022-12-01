@@ -73,7 +73,10 @@ const CartCards = () => {
                   {rate}
                 </p>
                 <div className="flex items-center justify-between w-full">
-                  <Button />
+                  <Button
+                    text="Add To Cart"
+                    btnClass="min-w-[153px] bg-[#F9F871]"
+                  />
                 </div>
               </div>
             </div>
