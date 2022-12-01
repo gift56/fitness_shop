@@ -27,11 +27,11 @@ const ToolsCards = () => {
               key={i}
               className="lg:w-[50%] w-full bg-[#FAFAFA] shadow-large lg:h-[301px] rounded-xl flex flex-col-reverse lg:flex-row items-center justify-between gap-2"
             >
-              <div className="flex flex-col justify-between items-start h-full">
-                <h2 className="text-black font-semibold text-[29px] leading-9">
+              <div className="flex flex-col justify-between gap-4 lg:gap-0 items-start h-full">
+                <h2 className="text-black font-semibold sm:text-[29px] text-2xl leading-9">
                   {title}
                 </h2>
-                <p className="text-xl font-light text-black w-full lg:w-[279px]">
+                <p className="sm:text-xl text-base font-light text-black w-full lg:w-[279px]">
                   {details}
                 </p>
                 <Button
