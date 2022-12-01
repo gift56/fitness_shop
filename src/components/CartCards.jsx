@@ -7,6 +7,7 @@ import img5 from "../assets/card5Img.svg";
 import img6 from "../assets/card6Img.svg";
 import img7 from "../assets/card7Img.svg";
 import img8 from "../assets/card8Img.svg";
+import { BsHeart } from "react-icons/bs";
 
 const CartCards = () => {
   const cartCards = [
