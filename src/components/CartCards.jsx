@@ -60,7 +60,7 @@ const CartCards = () => {
           {cartCards.map(({ title, rate, img }, i) => (
             <div
               key={i}
-              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col gap-4 items-center justify-center"
+              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col gap-4 items-center justify-center py-3"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <img src={img} alt={title} className="w-full h-full" />
@@ -75,8 +75,11 @@ const CartCards = () => {
                 <div className="flex items-center justify-between w-full">
                   <Button
                     text="Add To Cart"
-                    btnClass="min-w-[153px] bg-[#F9F871]"
+                    btnClass="min-w-[153px] bg-[#f9f87177]"
                   />
+                  <span className="h-[48px] flex items-center justify-center bg-[#F9F871] w-[46px] rounded-xl cursor-pointer">
+                    <BsHeart />
+                  </span>
                 </div>
               </div>
             </div>
