@@ -25,14 +25,17 @@ const ToolsCards = () => {
           {cardsData.map(({ img, title, details }, i) => (
             <div
               key={i}
-              className="w-[50%] bg-[#FAFAFA] shadow-large h-[301px] rounded-lg flex items-center justify-between gap-2"
+              className="w-[50%] bg-[#FAFAFA] shadow-large h-[301px] rounded-xl flex items-center justify-between gap-2"
             >
               <div className="flex flex-col justify-between items-start h-full">
                 <h2 className="text-black font-semibold text-[29px] leading-9">
                   {title}
                 </h2>
                 <p className="text-xl font-light text-black">{details}</p>
-                <Button text="View More" />
+                <Button
+                  text="View More"
+                  btnClass="min-w-[153px] bg-[#F9F871]"
+                />
               </div>
               <div>
                 <img src={img} alt={title} />
