@@ -56,8 +56,11 @@ const CartCards = () => {
       <div className="container py-10">
         <div className="w-full flex flex-wrap gap-4 items-center justify-start">
           {cartCards.map(({ title, rate, img }, i) => (
-            <div key={i} className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA]">
-              <div>
+            <div
+              key={i}
+              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col items-center justify-center"
+            >
+              <div className="sm:w-fit sm:h-fit w-full h-full">
                 <img src={img} alt={title} />
               </div>
             </div>
