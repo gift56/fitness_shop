@@ -78,7 +78,7 @@ const CartCards = () => {
                     btnClass="min-w-[153px] bg-[#f9f87177]"
                   />
                   <span className="h-[48px] flex items-center justify-center bg-[#F9F871] w-[46px] rounded-xl cursor-pointer">
-                    <BsHeart />
+                    <BsHeart className="w-[20px] h-[20px]" />
                   </span>
                 </div>
               </div>
