@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-white ">
       <div className="container py-10">
-        <div className="w-full flex items-center justify-between h-[374px] bg-[#F3C5FF] px-4 relative">
+        <div className="w-full flex items-center justify-between h-[383px] bg-[#F3C5FF] px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1">
             <h1 className="font-normal text-black leading-[40px] text-[33px] text-left max-w-[503px]">
               Exercise more and more with{" "}
@@ -24,7 +24,7 @@ const Hero = () => {
               <img
                 src={HeroImg}
                 alt="heroImage"
-                className="h-full object-cover translate-y-[-2rem]"
+                className="h-full object-cover translate-y-[-1rem]"
               />
             </div>
           </div>
