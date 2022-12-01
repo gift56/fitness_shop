@@ -85,9 +85,9 @@ const CartCards = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex items-center justify-center w-full relative mt-32">
           <div></div>
-          <Button />
+          <Button text="View More" btnClass="" />
         </div>
       </div>
     </section>
