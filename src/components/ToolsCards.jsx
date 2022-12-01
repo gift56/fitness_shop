@@ -10,6 +10,12 @@ const ToolsCards = () => {
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue orci, pretium nibh eget.",
     },
+    {
+      img: GymTool,
+      title: "5kg Dumbell Pair",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue orci, pretium nibh eget.",
+    },
   ];
   return (
     <section className="bg-white">
