@@ -89,8 +89,9 @@ const CartCards = () => {
           <div></div>
           <Button
             text="View More"
-            btnClass="bg-white !border !border-[#AAFAB2]"
+            btnClass="bg-white border border-[#AAFAB2] min-w-[221px] hover:bg-[#AAFAB2]"
           />
+          <div></div>
         </div>
       </div>
     </section>
