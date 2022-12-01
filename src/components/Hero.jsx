@@ -27,6 +27,18 @@ const Hero = () => {
                 className="h-full object-cover translate-y-[-1rem]"
               />
             </div>
+            <div>
+              <img src={balls1} alt="/" />
+            </div>
+            <div>
+              <img src={balls2} alt="/" />
+            </div>
+            <div>
+              <img src={balls3} alt="/" />
+            </div>
+            <div>
+              <img src={balls4} alt="/" />
+            </div>
           </div>
         </div>
       </div>
