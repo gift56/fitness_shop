@@ -20,7 +20,7 @@ const Hero = () => {
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1">
-            <div className="absolute top-[-100px] right-[65px] h-[500px]">
+            <div className="absolute top-[-100px] right-[65px] h-[500px] z-10">
               <img
                 src={HeroImg}
                 alt="heroImage"
