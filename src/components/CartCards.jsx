@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 
 const CartCards = () => {
+    const cartCards=[{
+        
+    }]
   return (
-    <div>CartCards</div>
-  )
-}
+    <section className="bg-white">
+      <div className="container py-10">
+        <div className="w-full flex flex-wrap gap-4 items-center justify-start">
 
-export default CartCards
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CartCards;
