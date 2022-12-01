@@ -24,7 +24,7 @@ const ToolsCards = () => {
           {cardsData.map(({ img, title, details }, i) => (
             <div
               key={i}
-              className="w-[50%] bg-[#FAFAFA] shadow-md min-h-[301px]"
+              className="w-[50%] bg-[#FAFAFA] shadow-large min-h-[301px] rounded-lg flex items-center justify-between gap-2"
             >
               <div></div>
               <div>

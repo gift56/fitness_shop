@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         primary: "#00B3FF",
       },
+      boxShadow: {
+        large: "0px 4px 32px rgba(0, 0, 0, 0.25);",
+      },
     },
   },
   plugins: [],
