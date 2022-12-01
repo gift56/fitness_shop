@@ -8,6 +8,7 @@ import img6 from "../assets/card6Img.svg";
 import img7 from "../assets/card7Img.svg";
 import img8 from "../assets/card8Img.svg";
 import { BsHeart } from "react-icons/bs";
+import Button from "./button/Button";
 
 const CartCards = () => {
   const cartCards = [
@@ -71,7 +72,9 @@ const CartCards = () => {
                 <p className="font-medium text-xl text-black leading-[25px]">
                   {rate}
                 </p>
-                <div className="flex items-center justify-between w-full"></div>
+                <div className="flex items-center justify-between w-full">
+                  <Button />
+                </div>
               </div>
             </div>
           ))}
