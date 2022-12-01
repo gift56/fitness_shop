@@ -54,7 +54,15 @@ const CartCards = () => {
   return (
     <section className="bg-white">
       <div className="container py-10">
-        <div className="w-full flex flex-wrap gap-4 items-center justify-start"></div>
+        <div className="w-full flex flex-wrap gap-4 items-center justify-start">
+          {cartCards.map(({ title, rate, img }, i) => (
+            <div key={i} className="sm:w-[372px] w-full">
+              <div>
+                <img src={img} alt={title} />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
