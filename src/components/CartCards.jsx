@@ -58,10 +58,13 @@ const CartCards = () => {
           {cartCards.map(({ title, rate, img }, i) => (
             <div
               key={i}
-              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col items-center justify-center"
+              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col gap-4 items-center justify-center"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <img src={img} alt={title} className="w-full h-full" />
+              </div>
+              <div className="flex flex-col w-full gap-4 items-start justify-start">
+                <h2 className="font-medium text-xl text-black">{title}</h2>
               </div>
             </div>
           ))}
