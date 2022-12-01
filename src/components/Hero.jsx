@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -10,6 +11,7 @@ const Hero = () => {
               Exercise more and more with <span>MyShop. Number #1</span> trusted
               fitness tool website
             </h1>
+            <Button />
           </div>
           <div className="flex-1"></div>
         </div>
