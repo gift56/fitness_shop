@@ -19,8 +19,8 @@ const Hero = () => {
             </h1>
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
-          <div className="flex-1 relative">
-            <div className="lg:absolute lg:top-[-100px] lg:right-[65px] md:h-[500px] z-10 w-full relative">
+          <div className="flex-1">
+            <div className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 ">
               <img
                 src={HeroImg}
                 alt="heroImage"
@@ -48,7 +48,7 @@ const Hero = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="absolute top-5 right-3 w-[200px] h-[200px] z-[9]">
+            <div className="hidden lg:flex lg:absolute top-5 right-3 w-[200px] h-[200px] z-[9]">
               <img
                 src={balls4}
                 alt="/"
