@@ -86,12 +86,12 @@ const CartCards = () => {
           ))}
         </div>
         <div className="flex items-center justify-center w-full relative mt-32">
-          <div></div>
+          <div className="w-[45%] bg-[#E5E5E5] h-[2px]"></div>
           <Button
             text="View More"
             btnClass="bg-white border border-[#AAFAB2] min-w-[221px] hover:bg-[#AAFAB2]"
           />
-          <div></div>
+          <div className="w-[45%] bg-[#E5E5E5] h-[2px]"></div>
         </div>
       </div>
     </section>
