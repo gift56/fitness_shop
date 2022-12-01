@@ -1,4 +1,5 @@
 import React from "react";
+import HeroImg from ''
 import Button from "./button/Button";
 
 const Hero = () => {
