@@ -61,7 +61,7 @@ const CartCards = () => {
               className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col items-center justify-center"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
-                <img src={img} alt={title} />
+                <img src={img} alt={title} className="w-full h-full" />
               </div>
             </div>
           ))}
