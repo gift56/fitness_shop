@@ -9,8 +9,8 @@ import Button from "./button/Button";
 const Hero = () => {
   return (
     <section className="bg-white ">
-      <div className="container py-8 bg-black">
-        <div className="w-full flex items-center justify-between h-[394px] bg-[#F3C5FF] px-4 relative">
+      <div className="container py-10">
+        <div className="w-full flex items-center justify-between h-[374px] bg-[#F3C5FF] px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1">
             <h1 className="font-normal text-black leading-[40px] text-[33px] text-left max-w-[503px]">
               Exercise more and more with{" "}
@@ -20,8 +20,12 @@ const Hero = () => {
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1">
-            <div className="absolute top-[-100px] right-[40px]">
-              <img src={HeroImg} alt="heroImage" />
+            <div className="absolute top-[-100px] right-[40px] h-[500px]">
+              <img
+                src={HeroImg}
+                alt="heroImage"
+                className="h-full object-cover translate-y-[-2rem]"
+              />
             </div>
           </div>
         </div>
