@@ -19,10 +19,18 @@ const ToolsCards = () => {
   ];
   return (
     <section className="bg-white">
-      <div className="container">
+      <div className="container pb-[4rem]">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 w-full">
           {cardsData.map(({ img, title, details }, i) => (
-            <div key={i}></div>
+            <div
+              key={i}
+              className="w-[50%] bg-[#FAFAFA] shadow-md min-h-[301px]"
+            >
+              <div></div>
+              <div>
+                <img src={img} alt={title} />
+              </div>
+            </div>
           ))}
         </div>
       </div>
