@@ -92,7 +92,6 @@ const CartCards = () => {
             btnClass="bg-white border border-[#AAFAB2] min-w-[221px] hover:bg-[#AAFAB2] mx-3"
           />
           <div className="w-[45%] bg-[#E5E5E5] h-[2px]"></div>
-          
         </div>
       </div>
     </section>
