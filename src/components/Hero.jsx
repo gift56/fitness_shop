@@ -11,7 +11,7 @@ const Hero = () => {
               Exercise more and more with <span>MyShop. Number #1</span> trusted
               fitness tool website
             </h1>
-            <Button text="View More" />
+            <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1"></div>
         </div>
