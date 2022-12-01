@@ -27,7 +27,7 @@ const Hero = () => {
                 className="h-full object-cover translate-y-[-1rem]"
               />
             </div>
-            <div className="absolute top-[40px] right-[355px] w-[65px] h-[65px] z-[9]">
+            <div className="absolute top-[145px] right-[505px] w-[65px] h-[65px] z-[9]">
               <img
                 src={balls1}
                 alt="/"
