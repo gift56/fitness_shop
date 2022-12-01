@@ -20,21 +20,21 @@ const Hero = () => {
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1">
-            <div className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 ">
+            <div className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none">
               <img
                 src={HeroImg}
                 alt="heroImage"
                 className="h-full object-cover lg:translate-y-[-1rem]"
               />
             </div>
-            <div className="hidden lg:flex lg:absolute top-[145px] right-[505px] w-[65px] h-[65px] z-[9]">
+            <div className="hidden lg:flex lg:absolute top-[145px] md:right-[370px] xl:right-[505px] w-[65px] h-[65px] z-[9]">
               <img
                 src={balls1}
                 alt="/"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="hidden lg:flex lg:absolute top-[40px] right-[355px] w-[86px] h-[86px] z-[9]">
+            <div className="hidden lg:flex lg:absolute top-[40px] md:right-[290px] xl:right-[355px] w-[86px] h-[86px] z-[9]">
               <img
                 src={balls2}
                 alt="/"
