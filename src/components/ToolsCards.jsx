@@ -2,7 +2,7 @@ import React from 'react'
 
 const ToolsCards = () => {
   return (
-    <div>ToolsCards</div>
+    <section>ToolsCards</section>
   )
 }
 
