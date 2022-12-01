@@ -36,8 +36,12 @@ const Hero = () => {
             <div>
               <img src={balls3} alt="/" />
             </div>
-            <div>
-              <img src={balls4} alt="/" />
+            <div className="absolute top-5 right-3 w-[200px] h-[200px] z-[9]">
+              <img
+                src={balls4}
+                alt="/"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>
