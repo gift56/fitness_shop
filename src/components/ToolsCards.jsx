@@ -26,7 +26,9 @@ const ToolsCards = () => {
               key={i}
               className="w-[50%] bg-[#FAFAFA] shadow-large min-h-[301px] rounded-lg flex items-center justify-between gap-2"
             >
-              <div></div>
+              <div className="flex flex-col justify-between items-start">
+                
+              </div>
               <div>
                 <img src={img} alt={title} />
               </div>
