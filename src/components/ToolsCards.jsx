@@ -31,7 +31,9 @@ const ToolsCards = () => {
                 <h2 className="text-black font-semibold text-[29px] leading-9">
                   {title}
                 </h2>
-                <p className="text-xl font-light text-black">{details}</p>
+                <p className="text-xl font-light text-black w-full lg:w-[279px]">
+                  {details}
+                </p>
                 <Button
                   text="View More"
                   btnClass="min-w-[153px] bg-[#F9F871]"
