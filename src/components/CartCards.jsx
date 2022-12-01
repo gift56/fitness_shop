@@ -63,8 +63,13 @@ const CartCards = () => {
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <img src={img} alt={title} className="w-full h-full" />
               </div>
-              <div className="flex flex-col w-full gap-4 items-start justify-start">
-                <h2 className="font-medium text-xl text-black">{title}</h2>
+              <div className="flex flex-col w-full gap-2 items-start justify-start">
+                <h2 className="font-medium text-xl leading-[25px] text-black">
+                  {title}
+                </h2>
+                <p className="font-medium text-xl text-black leading-[25px]">
+                  {rate}
+                </p>
               </div>
             </div>
           ))}
