@@ -28,10 +28,18 @@ const Hero = () => {
               />
             </div>
             <div>
-              <img src={balls1} alt="/" />
+              <img
+                src={balls1}
+                alt="/"
+                // className="w-full h-full object-contain"
+              />
             </div>
-            <div>
-              <img src={balls2} alt="/" />
+            <div className="absolute top-[40px] right-[355px] w-[86px] h-[86px] z-[9]">
+              <img
+                src={balls2}
+                alt="/"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="absolute bottom-0 right-[330px] w-[125px] h-[125px] z-[9]">
               <img
