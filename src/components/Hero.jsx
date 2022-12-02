@@ -5,6 +5,7 @@ import balls2 from "../assets/circle2.svg";
 import balls3 from "../assets/circle3.svg";
 import balls4 from "../assets/circle4.svg";
 import Button from "./button/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -20,13 +21,18 @@ const Hero = () => {
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1">
-            <div className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none">
+            <motion.div
+              initial={{ opacity: 0, y: "-50px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+              className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none"
+            >
               <img
                 src={HeroImg}
                 alt="heroImage"
                 className="h-full object-cover lg:translate-y-[-1rem]"
               />
-            </div>
+            </motion.div>
             <div className="hidden lg:flex lg:absolute top-[145px] md:right-[370px] xl:right-[505px] w-[65px] h-[65px] z-[9]">
               <img
                 src={balls1}
