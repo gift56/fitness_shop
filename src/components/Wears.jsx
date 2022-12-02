@@ -37,6 +37,7 @@ const Wears = () => {
                 btnClass="min-w-[228px] h-[80px] bg-[#C4C4C4] border border-black"
               />
             }
+            data={mensImages}
           />
         </div>
       </div>
