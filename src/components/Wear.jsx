@@ -19,7 +19,7 @@ const Wear = ({ id, title, details, btn, data }) => {
         {data.map(({ img, name, price }, i) => (
           <div
             key={i}
-            className="flex justify-start min-w-[233px] items-center flex-col gap-5 bg-[#E1DADA]"
+            className="flex justify-start min-w-[233px] items-center flex-col gap-5 bg-[#E1DADA] pb-7"
           >
             <div className="lg:w-fit lg:h-fit w-full h-full">
               <img src={img} alt={name} className="w-full h-full" />
