@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <section className="lg:bg-white bg-[#FF7B7B]" id="testimonial">
       <div className="container lg:py-10 pt-8">
-        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[383px] bg-[#FF7B7B] lg:px-4 relative">
+        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[362px] bg-[#FF7B7B] lg:px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10">
             <h1 className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full">
               <span className="font-semibold">Reebok Les Mills </span>
@@ -18,11 +18,11 @@ const Testimonials = () => {
             <Button text="View More" btnClass="min-w-[153px] bg-white" />
           </div>
           <div className="flex-1">
-            <div className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none">
+            <div className="lg:absolute top-[-60px] right-[3rem] md:h-[421px] z-10 select-none">
               <img
-                src=""
+                src={testimonial1}
                 alt="heroImage"
-                className="h-full object-cover lg:translate-y-[-1rem]"
+                className="h-full object-cover"
               />
             </div>
             <div className="hidden lg:flex lg:absolute top-[145px] md:right-[370px] xl:right-[505px] w-[65px] h-[65px] z-[9]">
