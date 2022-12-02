@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./button/Button";
+import testimonial1 from "../assets/user.svg";
 
 const Testimonials = () => {
   return (
     <section className="lg:bg-white bg-[#FF7B7B]" id="testimonial">
       <div className="container lg:py-10 pt-8">
-        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[383px] bg-[#F3C5FF] lg:px-4 relative">
+        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[383px] bg-[#FF7B7B] lg:px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10">
             <h1 className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full">
               <span className="font-semibold"></span>
