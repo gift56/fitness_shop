@@ -44,6 +44,18 @@ const Wears = () => {
       price: "Rs. 1300",
     },
   ];
+
+  const salesData = [
+    {
+      img: women,
+    },
+    {
+      img: women2,
+    },
+    {
+      img: women3,
+    },
+  ];
   return (
     <section className="bg-white">
       <div className="container py-5 pb-8">
@@ -72,10 +84,11 @@ const Wears = () => {
             }
             data={womenData}
           />
-          
+
           <Wear
-            id="women"
-            title="Women"
+            id="sale"
+            title="Sale"
+            className="mt-10"
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
@@ -83,7 +96,7 @@ const Wears = () => {
                 btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
               />
             }
-            data={womenData}
+            data={salesData}
           />
         </div>
       </div>
