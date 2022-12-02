@@ -68,6 +68,11 @@ const Footer = () => {
                 <h2 className="font-medium lg:text-2xl text-xl text-black">
                   {title}
                 </h2>
+                <div className="flex flex-col gap-2 items-start justify-start w-full">
+                  {links.map((item, i) => (
+                    <div key={i}></div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
