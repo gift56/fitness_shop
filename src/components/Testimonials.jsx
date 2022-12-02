@@ -32,7 +32,7 @@ const Testimonials = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="hidden lg:flex lg:absolute top-[40px] md:right-[290px] xl:right-[355px] w-[86px] h-[86px] z-[9]">
+            <div className="hidden lg:flex lg:absolute top-[38px] md:right-[290px] xl:right-[400px] w-[86px] h-[86px] z-[9]">
               <img
                 src={circle3}
                 alt="/"
