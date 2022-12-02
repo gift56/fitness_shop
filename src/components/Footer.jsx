@@ -59,7 +59,18 @@ const Footer = () => {
               molestie consequat.
             </p>
           </div>
-          <div className="flex flex-wrap gap-8 items-start justify-start flex-1"></div>
+          <div className="flex flex-wrap gap-8 items-start justify-end flex-1">
+            {footerRows.map(({ title, links }, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-start justify-start text-left gap-4 w-[25%]"
+              >
+                <h2 className="font-medium lg:text-2xl text-xl text-black">
+                  {title}
+                </h2>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
