@@ -5,6 +5,9 @@ import men3 from "../assets/men3.svg";
 import women from "../assets/women.svg";
 import women2 from "../assets/women2.svg";
 import women3 from "../assets/women3.svg";
+import client from "../assets/client1.svg";
+import client2 from "../assets/client2.svg";
+import client3 from "../assets/client3.svg";
 import Button from "./button/Button";
 import Wear from "./Wear";
 
@@ -47,13 +50,13 @@ const Wears = () => {
 
   const salesData = [
     {
-      img: women,
+      img: client,
     },
     {
-      img: women2,
+      img: client2,
     },
     {
-      img: women3,
+      img: client3,
     },
   ];
   return (
@@ -89,6 +92,7 @@ const Wears = () => {
             id="sale"
             title="Sale"
             className="mt-10"
+            dataClasses="bg-transparent"
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
