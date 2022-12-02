@@ -59,18 +59,24 @@ const Footer = () => {
               molestie consequat.
             </p>
           </div>
-          <div className="flex flex-wrap gap-8 items-start justify-end flex-1">
+          <div className="flex flex-col sm:flex-row gap-8 items-start justify-between lg:justify-end flex-1">
             {footerRows.map(({ title, links }, i) => (
               <div
                 key={i}
-                className="flex flex-col items-start justify-start text-left gap-4 w-[25%]"
+                className="flex flex-col items-start justify-start text-left gap-4"
               >
                 <h2 className="font-medium lg:text-2xl text-xl text-black">
                   {title}
                 </h2>
                 <div className="flex flex-col gap-2 items-start justify-start w-full">
-                  {links.map((item, i) => (
-                    <div key={i}></div>
+                  {links.map(({ icon, detail }, i) => (
+                    <div
+                      key={i}
+                      className={`${icon ? "flex items-center gap-4" : ""}`}
+                    >
+                      <span>{icon}</span>
+                      <h3>{detail}</h3>
+                    </div>
                   ))}
                 </div>
               </div>
