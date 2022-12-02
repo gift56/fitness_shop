@@ -1,6 +1,15 @@
 import React from "react";
 
-const Wear = ({ id, title, details, btn, data, dataClasses, className }) => {
+const Wear = ({
+  id,
+  title,
+  details,
+  btn,
+  data,
+  dataClasses,
+  className,
+  detail,
+}) => {
   return (
     <div
       id={id}
@@ -15,23 +24,27 @@ const Wear = ({ id, title, details, btn, data, dataClasses, className }) => {
         </p>
         {btn}
       </div>
-      <div className="flex flex-col lg:flex-row gap-6 items-start justify-start flex-1 w-full">
+      <div
+        className={`flex flex-col lg:flex-row gap-6 items-start justify-start flex-1 w-full ${dataClasses}`}
+      >
         {data.map(({ img, name, price }, i) => (
           <div
             key={i}
             className={`flex justify-start lg:min-w-[30%] w-full items-center flex-col gap-5 bg-[#E1DADA] pb-7 ${dataClasses}`}
           >
             <div className="lg:w-fit lg:h-fit w-full h-full">
-              <img src={img} alt={name} className="w-full h-full" />
+              <img src={img} alt={name} className="w-full h-full max-w-full" />
             </div>
-            <div className="flex flex-col items-start justify-start w-full gap-3">
-              <h3 className="text-black text-lg lg:text-xl font-medium">
-                {name}
-              </h3>
-              <p className="text-black text-lg lg:text-xl font-medium">
-                {price}
-              </p>
-            </div>
+            {detail === false ? (
+              <div className="flex flex-col items-start justify-start w-full gap-3">
+                <h3 className="text-black text-lg lg:text-xl font-medium">
+                  {name}
+                </h3>
+                <p className="text-black text-lg lg:text-xl font-medium">
+                  {price}
+                </p>
+              </div>
+            ) : null}
           </div>
         ))}
       </div>

@@ -74,6 +74,7 @@ const Wears = () => {
               />
             }
             data={menData}
+            detail={false}
           />
           <Wear
             id="women"
@@ -86,13 +87,14 @@ const Wears = () => {
               />
             }
             data={womenData}
+            detail={false}
           />
 
           <Wear
             id="sale"
             title="Sale"
-            className="mt-10"
-            dataClasses="bg-transparent"
+            className="mt-10 lg:items-center items-start"
+            dataClasses="bg-transparent items-center justify-center"
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
@@ -101,6 +103,7 @@ const Wears = () => {
               />
             }
             data={salesData}
+            detail={true}
           />
         </div>
       </div>
