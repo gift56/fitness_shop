@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const NewsLetter = () => {
-  return (
-    <section>NewsLetter</section>
-  )
-}
+  return <section className="lg:bg-white bg-[#F3C5FF]" id="login"></section>;
+};
 
-export default NewsLetter
+export default NewsLetter;

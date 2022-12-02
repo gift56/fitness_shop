@@ -26,7 +26,7 @@ const Header = () => {
 
   const cartIcons = [
     {
-      to: "home",
+      to: "login",
       icon: <BiUser className="w-[20px] h-[20px]" />,
       text: "Login",
     },
