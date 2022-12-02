@@ -1,9 +1,46 @@
 import React from "react";
+import {
+  BsChat,
+  BsFillArrowUpCircleFill,
+  BsFillPhoneFill,
+} from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const Footer = () => {
-  const footerRows = [{}];
-  
+  const footerRows = [
+    {
+      title: "Contact Us",
+      links: [
+        {
+          icon: <BsFillPhoneFill />,
+          detail: "(808)-555-121",
+        },
+        {
+          icon: <BsChat />,
+          detail: "dummyemail@xyz.com",
+        },
+        {
+          icon: <BsFillArrowUpCircleFill />,
+          detail: "Fake Address",
+        },
+      ],
+    },
+    {
+      title: "About Us",
+      links: [
+        {
+          detail: "FAQ",
+        },
+        {
+          detail: "Support",
+        },
+        {
+          detail: "Privacy & Policy",
+        },
+      ],
+    },
+  ];
+
   return (
     <footer className="bg-[#F3C5FF]">
       <div className="container md:py-16 py-12">
