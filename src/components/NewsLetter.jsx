@@ -3,7 +3,7 @@ import Button from "./button/Button";
 
 const NewsLetter = () => {
   return (
-    <section className="lg:bg-white bg-[#F3C5FF]" id="login">
+    <section className="bg-white" id="login">
       <div className="container py-10">
         <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-center lg:h-[303px] bg-[#EED9C8] lg:px-4 relative p-5">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10">
