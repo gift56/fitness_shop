@@ -25,17 +25,26 @@ const Testimonials = () => {
                 className="h-full object-cover"
               />
             </div>
-            <div className="hidden lg:flex lg:absolute top-[145px] md:right-[370px] xl:right-[505px] w-[65px] h-[65px] z-[9]">
-              <img src="" alt="/" className="w-full h-full object-contain" />
+            <div className="hidden lg:flex lg:absolute top-[145px] md:right-[370px] xl:right-[575px] w-[60px] h-[60px] z-[9]">
+              <img
+                src={circle2}
+                alt="/"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="hidden lg:flex lg:absolute top-[40px] md:right-[290px] xl:right-[355px] w-[86px] h-[86px] z-[9]">
-              <img src="" alt="/" className="w-full h-full object-contain" />
+              <img
+                src={circle3}
+                alt="/"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <div className="hidden lg:flex lg:absolute bottom-0 right-[330px] w-[125px] h-[125px] z-[9]">
-              <img src="" alt="/" className="w-full h-full object-contain" />
-            </div>
-            <div className="hidden lg:flex lg:absolute top-5 right-3 w-[200px] h-[200px] z-[9]">
-              <img src="" alt="/" className="w-full h-full object-contain" />
+            <div className="hidden lg:flex lg:absolute bottom-2 right-[490px] w-[57px] h-[57px] z-[9]">
+              <img
+                src={circle1}
+                alt="/"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>
