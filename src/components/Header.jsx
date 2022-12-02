@@ -26,10 +26,12 @@ const Header = () => {
 
   const cartIcons = [
     {
+      to: "login",
       icon: <BiUser className="w-[20px] h-[20px]" />,
       text: "Login",
     },
     {
+      to: "cart",
       icon: <BiCart className="w-[20px] h-[20px]" />,
       text: "Cart",
     },
