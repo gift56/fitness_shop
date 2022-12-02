@@ -1,10 +1,10 @@
 import React from "react";
 
-const Wear = ({ id, title, details, btn, data }) => {
+const Wear = ({ id, title, details, btn, data, dataClasses, className }) => {
   return (
     <div
       id={id}
-      className="w-full flex flex-col lg:flex-row items-start justify-between gap-6"
+      className={`w-full flex flex-col lg:flex-row items-start justify-between gap-6 ${className}`}
     >
       <div className="flex flex-col gap-6 items-start justify-start flex-1">
         <h1 className="text-black font-bold text-[56px] leading-[72px]">
@@ -19,7 +19,7 @@ const Wear = ({ id, title, details, btn, data }) => {
         {data.map(({ img, name, price }, i) => (
           <div
             key={i}
-            className="flex justify-start lg:min-w-[30%] w-full items-center flex-col gap-5 bg-[#E1DADA] pb-7"
+            className={`flex justify-start lg:min-w-[30%] w-full items-center flex-col gap-5 bg-[#E1DADA] pb-7 ${dataClasses}`}
           >
             <div className="lg:w-fit lg:h-fit w-full h-full">
               <img src={img} alt={name} className="w-full h-full" />

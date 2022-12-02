@@ -72,6 +72,19 @@ const Wears = () => {
             }
             data={womenData}
           />
+          
+          <Wear
+            id="women"
+            title="Women"
+            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
+            btn={
+              <Button
+                text="Shop Now"
+                btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
+              />
+            }
+            data={womenData}
+          />
         </div>
       </div>
     </section>
