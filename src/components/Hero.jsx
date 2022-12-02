@@ -25,6 +25,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: "-50px" }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 2 }}
+              // , repeat: Infinity
               className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none"
             >
               <img
