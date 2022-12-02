@@ -3,7 +3,7 @@ import Button from "./button/Button";
 
 const Testimonials = () => {
   return (
-    <section className="lg:bg-white bg-[#FF7B7B]" id="cart">
+    <section className="lg:bg-white bg-[#FF7B7B]" id="testimonial">
       <div className="container lg:py-10 pt-8">
         <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[383px] bg-[#F3C5FF] lg:px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10">

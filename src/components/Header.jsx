@@ -26,7 +26,7 @@ const Header = () => {
 
   const cartIcons = [
     {
-      to: "login",
+      to: "home",
       icon: <BiUser className="w-[20px] h-[20px]" />,
       text: "Login",
     },
@@ -60,13 +60,13 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex gap-5 items-center">
-            {cartIcons.map(({ icon, text }, i) => (
+            {cartIcons.map(({ icon, text, to }, i) => (
               <div
                 className="flex items-center gap-2 cursor-pointer hover:text-[#FF7B7B] transition-all"
                 key={i}
               >
                 <Link
-                  to="cart"
+                  to={to}
                   className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all"
                 >
                   {text}
