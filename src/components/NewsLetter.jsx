@@ -14,6 +14,7 @@ const NewsLetter = () => {
               integer eget neque, ante.
             </p>
           </div>
+          <div className="flex flex-col lg:flex-row gap-3 justify-center items-center flex-1"></div>
         </div>
       </div>
     </section>
