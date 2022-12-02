@@ -34,7 +34,7 @@ const Wears = () => {
             btn={
               <Button
                 text="Shop Now"
-                btnClass="min-w-[228px] h-[80px] bg-[#C4C4C4] border border-black"
+                btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
               />
             }
             data={mensImages}
