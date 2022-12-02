@@ -1,10 +1,11 @@
 import React from "react";
+import Button from "./button/Button";
 
 const NewsLetter = () => {
   return (
     <section className="lg:bg-white bg-[#F3C5FF]" id="login">
       <div className="container lg:py-10 pt-8">
-        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[303px] bg-[#EED9C8] lg:px-4 relative">
+        <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-center lg:h-[303px] bg-[#EED9C8] lg:px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10">
             <h1 className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full">
               Join Our News Letter
@@ -14,7 +15,21 @@ const NewsLetter = () => {
               integer eget neque, ante.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row gap-3 justify-center items-center flex-1"></div>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="flex flex-col lg:flex-row gap-3 justify-start items-center flex-1"
+          >
+            <input
+              type="text"
+              name="newsletter"
+              id="newsletter"
+              className="h-[55px] outline-none border-none w-[440px] pl-4 text-xl"
+            />
+            <Button
+              text="Subscribe"
+              btnClass="bg-[#FFBC96] min-w-[156px] h-[55px]"
+            />
+          </form>
         </div>
       </div>
     </section>
