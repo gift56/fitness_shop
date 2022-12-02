@@ -63,9 +63,9 @@ const Footer = () => {
             {footerRows.map(({ title, links }, i) => (
               <div
                 key={i}
-                className="flex flex-col items-start justify-start text-left gap-4"
+                className="flex flex-col items-start justify-start text-left gap-4 lg:w-[44%] xl:w-[256px]"
               >
-                <h2 className="font-medium lg:text-2xl text-xl text-black">
+                <h2 className="font-medium lg:text-2xl text-lg md:text-xl text-black">
                   {title}
                 </h2>
                 <div className="flex flex-col gap-2 items-start justify-start w-full">
