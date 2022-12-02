@@ -3,8 +3,8 @@ import men1 from "../assets/men1.svg";
 import men2 from "../assets/men2.svg";
 import men3 from "../assets/men3.svg";
 
-const MenWears = () => {
-  return <section id="men">MenWears</section>;
+const Wears = () => {
+  return <section id="men">Wears</section>;
 };
 
-export default MenWears;
+export default Wears;
