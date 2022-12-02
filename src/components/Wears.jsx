@@ -26,7 +26,19 @@ const Wears = () => {
   return (
     <section className="bg-white">
       <div className="container py-5">
-        <div className="flex flex-col items-start justify-start w-full gap-5">
+        <div className="flex flex-col items-start justify-start w-full gap-10">
+          <Wear
+            id="men"
+            title="Men"
+            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
+            btn={
+              <Button
+                text="Shop Now"
+                btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
+              />
+            }
+            data={mensImages}
+          />
           <Wear
             id="men"
             title="Men"
