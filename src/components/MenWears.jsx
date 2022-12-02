@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import men1 from ''
 
 const MenWears = () => {
   return (
