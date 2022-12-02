@@ -75,7 +75,9 @@ const Footer = () => {
                       className={`${icon ? "flex items-center gap-4" : ""}`}
                     >
                       <span>{icon}</span>
-                      <h3>{detail}</h3>
+                      <h3 className="text-lg font-normal text-black">
+                        {detail}
+                      </h3>
                     </div>
                   ))}
                 </div>
