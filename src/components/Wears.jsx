@@ -6,6 +6,23 @@ import Button from "./button/Button";
 import Wear from "./Wear";
 
 const Wears = () => {
+  const mensImages = [
+    {
+      img: men1,
+      name: "Shorts",
+      price: "Rs. 1300",
+    },
+    {
+      img: men2,
+      name: "Shorts",
+      price: "Rs. 1300",
+    },
+    {
+      img: men3,
+      name: "Shorts",
+      price: "Rs. 1300",
+    },
+  ];
   return (
     <section className="bg-white">
       <div className="container py-5">
@@ -14,7 +31,12 @@ const Wears = () => {
             id="men"
             title="Men"
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
-            btn={<Button text="Shop Now" />}
+            btn={
+              <Button
+                text="Shop Now"
+                btnClass="min-w-[228px] h-[80px] bg-[#C4C4C4] border border-black"
+              />
+            }
           />
         </div>
       </div>
