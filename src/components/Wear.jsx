@@ -1,6 +1,6 @@
 import React from "react";
 
-const Wear = () => {
+const Wear = ({ id, title, details, btn, data }) => {
   return <div>Wear</div>;
 };
 
