@@ -67,6 +67,8 @@ const Header = () => {
               >
                 <Link
                   to={to}
+                  spy={true}
+                  smooth={true}
                   className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all"
                 >
                   {text}
