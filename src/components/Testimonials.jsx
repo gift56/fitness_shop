@@ -1,6 +1,9 @@
 import React from "react";
 import Button from "./button/Button";
 import testimonial1 from "../assets/user.svg";
+import circle1 from "../assets/userCircle1.svg";
+import circle2 from "../assets/userCircle2.svg";
+import circle3 from "../assets/userCircle3.svg";
 
 const Testimonials = () => {
   return (
