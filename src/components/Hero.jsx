@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-      className="lg:bg-white dark:lg:bg-slate-600 bg-[#F3C5FF] overflow-hidden"
+      className="lg:bg-white dark:lg:bg-slate-700 bg-[#F3C5FF] overflow-hidden"
       id="home"
     >
       <div className="container lg:py-10 pt-8">

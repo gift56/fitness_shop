@@ -37,12 +37,12 @@ const NewsLetter = () => {
               type="text"
               name="newsletter"
               id="newsletter"
-              className="h-[55px] outline-none border-none lg:w-[440px] w-full pl-4 text-xl"
+              className="h-[55px] outline-none border-none lg:w-[60%] w-full bg-white dark:bg-slate-700 dark:text-white pl-4 text-xl"
             />
             <Button
               time={3}
               text="Subscribe"
-              btnClass="bg-[#FFBC96] min-w-[156px] h-[55px]"
+              btnClass="bg-[#FFBC96] dark:bg-slate-500 dark:text-white min-w-[156px] h-[55px]"
             />
           </form>
         </div>

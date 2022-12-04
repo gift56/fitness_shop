@@ -97,7 +97,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-[#FAFAFA] dark:bg-gray-700 z-[9999999]">
+    <header className="sticky top-0 bg-[#FAFAFA] dark:bg-gray-800 z-[9999999]">
       <div className="container">
         <div className="flex justify-between items-center w-full py-4 relative">
           <h2 className="text-black dark:text-white font-semibold font-['Montserrat'] lg:text-2xl text-xl cursor-pointer">
