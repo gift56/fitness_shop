@@ -65,7 +65,7 @@ const CartCards = () => {
   };
 
   return (
-    <section className="bg-white  overflow-hidden" id="cart">
+    <section className="bg-white dark:bg-slate-600 overflow-hidden" id="cart">
       <div className="container py-10">
         <div className="w-full flex flex-wrap gap-4 items-center justify-start">
           {cartCards.map(({ title, rate, img }, i) => (
