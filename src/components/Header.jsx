@@ -38,26 +38,6 @@ const Header = () => {
       text: "Cart",
     },
   ];
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-    setMount(true);
-  }, [theme]);
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-
-  const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
 
   return (
     <header className="sticky top-0 bg-[#FAFAFA] z-[9999999]">
@@ -82,12 +62,12 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex gap-5 items-center">
-            <button
+            {/* <button
               className="bg-green-200 p-4 rounded-3xl"
               onClick={handleThemeSwitch}
             >
               Dark Mode
-            </button>
+            </button> */}
             {cartIcons.map(({ icon, text, to }, i) => (
               <Link
                 to={to}
