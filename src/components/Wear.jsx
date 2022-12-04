@@ -29,7 +29,7 @@ const Wear = ({
           initial={{ opacity: 0, x: "60px" }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, type: "tween" }}
-          className="text-[19px] leading-[23px] text-black font-normal max-w-sm"
+          className="text-[19px] leading-[23px] text-black dark:text-white font-normal max-w-sm"
         >
           {details}
         </motion.p>
