@@ -5,9 +5,11 @@ import { BsGrid, BsDoorClosed } from "react-icons/bs";
 import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
 const Header = () => {
-  const [mobileScreen, setMobileScreen] = useState(false);
   const [mount, setMount] = useState(false);
-  const [theme, setTheme] = useState("system");
+  const [mobileScreen, setMobileScreen] = useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
+  );
   const scrollLinks = [
     {
       href: "home",
@@ -66,6 +68,7 @@ const Header = () => {
 
       default:
         localStorage.removeItem("theme");
+        onWindowMatch();
         break;
     }
   }, [theme]);
