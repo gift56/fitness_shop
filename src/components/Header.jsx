@@ -39,26 +39,18 @@ const Header = () => {
       text: "Cart",
     },
   ];
+  const element = document.documentElement;
+
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
+    switch (theme) {
+      case "dark":
+        break;
+
+      default:
+        break;
     }
     setMount(true);
   }, []);
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-
-  const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
 
   const renderThemeChangerIcon = () => {
     if (!mount) return null;
@@ -68,7 +60,7 @@ const Header = () => {
         <button
           type="button"
           className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600 dark:text-white"
-          onClick={handleThemeSwitch}
+          onClick={() => setTheme("light")}
         >
           <HiOutlineSun fontSize={17} />
         </button>
@@ -78,7 +70,7 @@ const Header = () => {
         <button
           type="button"
           className="bg-gray-200 p-2 rounded-md hover:ring-2 hover:ring-gray-300"
-          onClick={handleThemeSwitch}
+          onClick={() => setTheme("dark")}
         >
           <HiMoon fontSize={16} />
         </button>
