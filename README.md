@@ -4,7 +4,7 @@ for deployment npm run build
 
 ## This is the official codebase for Social_world project
 
-Open [Social_world](https://social-world.vercel.app/) to preview the complete projects.
+Open [Gym-Store](https://gym-store.netlify.app/) to preview the complete projects.
 
 ## Description
 
@@ -19,8 +19,7 @@ The package manager responsible for the build process is _NPM_.
 To setup this project:
 
 <ul style="list-style=none;">
-<li>First step is to clone this repository on github [https://github.com/gift56/Social-World](https://github.com/gift56/Social-World)</li>
-<li>cd client</li>
+<li>First step is to clone this repository on github [https://github.com/gift56/fitness_shop](https://github.com/gift56/fitness_shop)</li>
 <li>Run npm install on your terminal</li>
 <li>Run npm run dev to start client server.</li>
 </ul>
