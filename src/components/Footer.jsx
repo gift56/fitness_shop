@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   BsChat,
   BsFillArrowUpCircleFill,
@@ -42,9 +43,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#F3C5FF]">
+    <footer className="bg-[#F3C5FF] overflow-hidden">
       <div className="container md:py-16 py-12">
-        <div className="flex w-full sm:flex-row flex-col justify-between items-start gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: "100px" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3 }}
+          className="flex w-full sm:flex-row flex-col justify-between items-start gap-4"
+        >
           <div className="flex flex-col gap-8 items-start justify-start flex-1">
             <h2 className="text-black font-semibold lg:text-[40px] text-2xl cursor-pointer">
               <Link to="home" spy={true} smooth={true}>
@@ -84,7 +90,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
