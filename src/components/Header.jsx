@@ -41,6 +41,10 @@ const Header = () => {
   ];
   const element = document.documentElement;
 
+  function onWindowMatch(){
+    
+  }
+
   useEffect(() => {
     switch (theme) {
       case "dark":
