@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "./button/Button";
+import { useState } from "react";
 
 const NewsLetter = () => {
+  const [newsLetter, setNewsLetter] = useState("");
   return (
     <section className="bg-white dark:bg-slate-700 overflow-hidden" id="login">
       <div className="container py-10">
@@ -27,7 +29,10 @@ const NewsLetter = () => {
             </motion.p>
           </div>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => {
+              e.preventDefault();
+              setNewsLetter("");
+            }}
             className="flex flex-col lg:flex-row gap-3 justify-start items-center flex-1"
           >
             <motion.input
