@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <section
-      className="lg:bg-white bg-[#FF7B7B] overflow-hidden"
+      className="lg:bg-white dark:lg:bg-slate-600 bg-[#FF7B7B] overflow-hidden"
       id="testimonial"
     >
       <div className="container lg:py-10 pt-8">
@@ -19,7 +19,7 @@ const Testimonials = () => {
               initial={{ opacity: 0, x: "-80px" }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, type: "tween" }}
-              className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
+              className="font-normal text-black  leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
             >
               <span className="font-semibold">Reebok Les Mills </span>
               Bodypump PerfCottnTank Mer's Performance Sleeveless Top
@@ -27,7 +27,7 @@ const Testimonials = () => {
             <Button
               time={3}
               text="View More"
-              btnClass="min-w-[153px] bg-white"
+              btnClass="min-w-[153px] bg-white dark:bg-slate-600 dark:text-white"
             />
           </div>
           <div className="flex-1">
