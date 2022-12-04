@@ -5,7 +5,6 @@ import { BsGrid, BsDoorClosed } from "react-icons/bs";
 import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
 const Header = () => {
-  const [mount, setMount] = useState(false);
   const [mobileScreen, setMobileScreen] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
