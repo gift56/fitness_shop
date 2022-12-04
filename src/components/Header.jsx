@@ -53,6 +53,7 @@ const Header = () => {
         break;
 
       default:
+        localStorage.removeItem("theme");
         break;
     }
   }, [theme]);
