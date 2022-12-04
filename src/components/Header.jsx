@@ -7,7 +7,7 @@ import { HiMoon, HiOutlineSun } from "react-icons/hi";
 const Header = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
   const [mount, setMount] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(null);
   const scrollLinks = [
     {
       href: "home",
