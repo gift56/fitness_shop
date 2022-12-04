@@ -9,6 +9,7 @@ import img7 from "../assets/card7Img.svg";
 import img8 from "../assets/card8Img.svg";
 import { BsHeart } from "react-icons/bs";
 import Button from "./button/Button";
+import { motion } from "framer-motion";
 
 const CartCards = () => {
   const cartCards = [
