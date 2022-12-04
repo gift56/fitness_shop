@@ -60,7 +60,7 @@ const Wears = () => {
     },
   ];
   return (
-    <section className="bg-white overflow-hidden">
+    <section className="bg-white dark:lg:bg-slate-600 overflow-hidden">
       <div className="container py-5 pb-8">
         <div className="flex flex-col items-start justify-start w-full gap-10">
           <Wear
