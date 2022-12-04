@@ -21,7 +21,7 @@ const Wear = ({
           initial={{ opacity: 0, x: "-60px" }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, type: "tween" }}
-          className="text-black font-bold text-[56px] leading-[72px]"
+          className="text-black dark:text-white font-bold text-[56px] leading-[72px]"
         >
           {title}
         </motion.h1>
