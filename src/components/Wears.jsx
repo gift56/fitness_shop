@@ -96,7 +96,7 @@ const Wears = () => {
             id="sale"
             title="Sale"
             className="mt-10 lg:items-center items-start"
-            dataClasses="bg-transparent items-center justify-center"
+            dataClasses="bg-transparent dark:bg-transparent items-center justify-center"
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
