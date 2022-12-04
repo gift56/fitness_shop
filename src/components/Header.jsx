@@ -138,19 +138,19 @@ const Header = () => {
           <div className="lg:hidden">
             {mobileScreen ? (
               <BsDoorClosed
-                className="w-[18px] h-[18px]"
+                className="w-[18px] h-[18px] text-black dark:text-white"
                 onClick={() => setMobileScreen((prev) => !prev)}
               />
             ) : (
               <BsGrid
-                className="w-[18px] h-[18px]"
+                className="w-[18px] h-[18px] text-black dark:text-white"
                 onClick={() => setMobileScreen((prev) => !prev)}
               />
             )}
           </div>
           <nav
-            className={`lg:hidden items-start gap-6 flex flex-col absolute top-[-100vh] bg-[#FAFAFA] w-full px-3 py-4 z-0 transition-all duration-300 ${
-              mobileScreen ? "!top-[47px] !z-[999999]" : ""
+            className={`lg:hidden items-start gap-6 flex flex-col absolute top-[-100vh] bg-[#FAFAFA] w-full px-3 py-4 z-0 transition-all duration-300 dark:bg-gray-800 rounded-xl ${
+              mobileScreen ? "!top-[50px] !z-[999999]" : ""
             }`}
           >
             {scrollLinks.map(({ href, text }, i) => (
@@ -160,7 +160,7 @@ const Header = () => {
                 smooth={true}
                 key={i}
                 onClick={() => setMobileScreen((prev) => !prev)}
-                className="text-black font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all before:duration-300"
+                className="text-black dark:text-white w-full font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all before:duration-300"
               >
                 {text}
               </Link>
