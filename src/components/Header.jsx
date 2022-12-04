@@ -44,17 +44,19 @@ const Header = () => {
   useEffect(() => {
     switch (theme) {
       case "dark":
+        element.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        break;
+      case "light":
+        element.classList.remove("dark");
         break;
 
       default:
         break;
     }
-    setMount(true);
-  }, []);
+  }, [theme]);
 
   const renderThemeChangerIcon = () => {
-    if (!mount) return null;
-
     if (theme === "dark") {
       return (
         <button
@@ -79,10 +81,10 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-[#FAFAFA] z-[9999999]">
+    <header className="sticky top-0 bg-[#FAFAFA] dark:bg-gray-700 z-[9999999]">
       <div className="container">
         <div className="flex justify-between items-center w-full py-4 relative">
-          <h2 className="text-black font-semibold font-['Montserrat'] lg:text-2xl text-xl cursor-pointer">
+          <h2 className="text-black dark:text-white font-semibold font-['Montserrat'] lg:text-2xl text-xl cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
               Gym <span className="text-primary">Store.</span>
             </Link>
@@ -94,7 +96,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 key={i}
-                className="text-black font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all before:duration-300"
+                className="text-black dark:text-white font-normal text-[18px] cursor-pointer relative pb-1 before:content-[''] before:absolute before:w-[0%] before:bottom-0 before:h-[3px] before:rounded-[18px] before:bg-[#ffdf7b] dark:hover:text-[#FF7B7B] hover:text-[#FF7B7B] hover:before:w-[100%] before:transition-all before:duration-300"
               >
                 {text}
               </Link>
@@ -107,10 +109,10 @@ const Header = () => {
                 to={to}
                 spy={true}
                 smooth={true}
-                className="flex items-center gap-2 cursor-pointer hover:text-[#FF7B7B] transition-all"
+                className="flex items-center gap-2 dark:text-white cursor-pointer hover:text-[#FF7B7B] dark:hover:text-[#FF7B7B] transition-all"
                 key={i}
               >
-                <span className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all">
+                <span className="hidden lg:flex text-black dark:text-white font-normal text-[18px] hover:text-[#FF7B7B] dark:hover:text-[#FF7B7B] transition-all">
                   {text}
                 </span>
                 {icon}
