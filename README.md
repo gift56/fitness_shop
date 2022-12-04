@@ -8,7 +8,7 @@ Open [Gym-Store](https://gym-store.netlify.app/) to preview the complete project
 
 ## Description
 
-This codebase is the frontend part of the website, containing 6 pages of documentation.
+This codebase is the frontend part of the website is actually a single page application for now.
 
 ## Package Manager
 
