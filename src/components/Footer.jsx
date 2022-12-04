@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="flex flex-col gap-8 items-start justify-start flex-1">
             <h2 className="text-black font-semibold lg:text-[40px] text-2xl cursor-pointer">
               <Link to="home" spy={true} smooth={true}>
-                My <span className="text-primary">Store.</span>
+                Gym <span className="text-primary">Store.</span>
               </Link>
             </h2>
             <p className="text-[#504A41] lg:text-lg text-base font-normal">
