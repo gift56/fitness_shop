@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiUser, BiCart } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { BsGrid, BsDoorClosed } from "react-icons/bs";
+import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
 const Header = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
+  const [mount, setMount] = useState(false);
+  const [theme, setTheme] = useState("light");
   const scrollLinks = [
     {
       href: "home",
@@ -36,14 +39,48 @@ const Header = () => {
       text: "Cart",
     },
   ];
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    setMount(true);
+  }, [theme]);
+
+  const renderThemeChangerIcon = () => {
+    if (!mount) return null;
+
+    if (theme === "dark") {
+      return (
+        <button
+          type="button"
+          className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600"
+          onClick={() => setTheme("light")}
+        >
+          <HiOutlineSun fontSize={17} />
+        </button>
+      );
+    } else {
+      return (
+        <button
+          type="button"
+          className="bg-gray-200 p-2 rounded-md hover:ring-2 hover:ring-gray-300"
+          onClick={() => setTheme("dark")}
+        >
+          <HiMoon fontSize={16} />
+        </button>
+      );
+    }
+  };
 
   return (
     <header className="sticky top-0 bg-[#FAFAFA] z-[9999999]">
       <div className="container">
         <div className="flex justify-between items-center w-full py-4 relative">
-          <h2 className="text-black font-semibold lg:text-2xl text-xl cursor-pointer">
+          <h2 className="text-black font-semibold font-['Montserrat'] lg:text-2xl text-xl cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
-              My <span className="text-primary">Store.</span>
+              Gym <span className="text-primary">Store.</span>
             </Link>
           </h2>
           <nav className="hidden lg:flex items-center gap-6">
@@ -60,21 +97,20 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex gap-5 items-center">
+            {renderThemeChangerIcon()}
             {cartIcons.map(({ icon, text, to }, i) => (
-              <div
+              <Link
+                to={to}
+                spy={true}
+                smooth={true}
                 className="flex items-center gap-2 cursor-pointer hover:text-[#FF7B7B] transition-all"
                 key={i}
               >
-                <Link
-                  to={to}
-                  spy={true}
-                  smooth={true}
-                  className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all"
-                >
+                <span className="hidden lg:flex text-black font-normal text-[18px] hover:text-[#FF7B7B] transition-all">
                   {text}
-                </Link>
+                </span>
                 {icon}
-              </div>
+              </Link>
             ))}
           </div>
           <div className="lg:hidden">
