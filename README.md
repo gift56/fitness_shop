@@ -12,7 +12,7 @@ This codebase is the frontend part of the website is actually a single page appl
 
 ## Package Manager
 
-The package manager responsible for the build process is _NPM_.
+The package manager responsible for the build process is _NPM_,_VITE_.
 
 ## Setup
 
