@@ -40,7 +40,6 @@ const Header = () => {
     },
   ];
   useEffect(() => {
-    
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
     } else {
@@ -68,7 +67,7 @@ const Header = () => {
       return (
         <button
           type="button"
-          className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600"
+          className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600 dark:text-white"
           onClick={handleThemeSwitch}
         >
           <HiOutlineSun fontSize={17} />
