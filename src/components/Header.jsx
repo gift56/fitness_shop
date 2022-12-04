@@ -49,6 +49,7 @@ const Header = () => {
         break;
       case "light":
         element.classList.remove("dark");
+        localStorage.setItem("theme", "light");
         break;
 
       default:
