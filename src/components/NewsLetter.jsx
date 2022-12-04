@@ -41,6 +41,8 @@ const NewsLetter = () => {
               transition={{ duration: 3, type: "tween" }}
               type="text"
               name="newsletter"
+              value={newsLetter}
+              onChange={(e) => setNewsLetter(e.target.value)}
               id="newsletter"
               className="h-[55px] outline-none border-none lg:w-[60%] w-full bg-white dark:bg-slate-700 dark:text-white pl-4 text-xl"
             />
