@@ -75,7 +75,7 @@ const CartCards = () => {
               transition={{ duration: 2, type: "tween" }}
               whileHover={{ scale: 1.02 }}
               key={i}
-              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
+              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-500 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <motion.img
@@ -92,7 +92,7 @@ const CartCards = () => {
                   initial={{ opacity: 0, x: "20px" }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 3, type: "tween" }}
-                  className="font-medium text-xl leading-[25px] text-black"
+                  className="font-medium text-xl leading-[25px] text-black dark:text-white"
                 >
                   {title}
                 </motion.h2>
@@ -100,7 +100,7 @@ const CartCards = () => {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 4, type: "tween" }}
-                  className="font-medium text-xl text-black leading-[25px]"
+                  className="font-medium text-xl text-black leading-[25px] dark:text-white"
                 >
                   {rate}
                 </motion.p>
