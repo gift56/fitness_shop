@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <section
-      className="lg:bg-white dark:lg:bg-slate-600 bg-[#FF7B7B] overflow-hidden"
+      className="lg:bg-white dark:lg:bg-slate-700 bg-[#FF7B7B] overflow-hidden"
       id="testimonial"
     >
       <div className="container lg:py-10 pt-8">

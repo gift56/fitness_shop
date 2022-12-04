@@ -65,7 +65,7 @@ const CartCards = () => {
   };
 
   return (
-    <section className="bg-white dark:bg-slate-600 overflow-hidden" id="cart">
+    <section className="bg-white dark:bg-slate-700 overflow-hidden" id="cart">
       <div className="container py-10">
         <div className="w-full flex flex-wrap gap-4 items-center justify-start">
           {cartCards.map(({ title, rate, img }, i) => (
@@ -75,7 +75,7 @@ const CartCards = () => {
               transition={{ duration: 2, type: "tween" }}
               whileHover={{ scale: 1.02 }}
               key={i}
-              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-500 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
+              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-600 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <motion.img
