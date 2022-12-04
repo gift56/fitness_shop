@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  BsChat,
-  BsFillArrowUpCircleFill,
-  BsFillPhoneFill,
-} from "react-icons/bs";
 import { Link } from "react-scroll";
+import { BiPhone } from "react-icons/bi";
+import { CiLocationOn } from "react-icons/ci";
+import { BsChatLeft } from "react-icons/bs";
 
 const Footer = () => {
   const footerRows = [
@@ -13,15 +11,15 @@ const Footer = () => {
       title: "Contact Us",
       links: [
         {
-          icon: <BsFillPhoneFill />,
+          icon: <BiPhone />,
           detail: "(808)-555-121",
         },
         {
-          icon: <BsChat />,
+          icon: <BsChatLeft />,
           detail: "dummyemail@xyz.com",
         },
         {
-          icon: <BsFillArrowUpCircleFill />,
+          icon: <CiLocationOn />,
           detail: "Fake Address",
         },
       ],
