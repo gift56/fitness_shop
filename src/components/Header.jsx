@@ -40,9 +40,17 @@ const Header = () => {
     },
   ];
   const element = document.documentElement;
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  console.log(darkQuery);
 
-  function onWindowMatch(){
-    
+  function onWindowMatch() {
+    // if (
+    //   localStorage.theme === "dark" ||
+    // ) {
+    //   document.documentElement.classList.add("dark");
+    // } else {
+    //   document.documentElement.classList.remove("dark");
+    // }
   }
 
   useEffect(() => {
