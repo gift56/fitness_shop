@@ -6,6 +6,7 @@ import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
 const Header = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
+  const [mount, setMount] = useState(false);
   const [theme, setTheme] = useState(null);
   const scrollLinks = [
     {
@@ -38,13 +39,14 @@ const Header = () => {
       text: "Cart",
     },
   ];
-
   useEffect(() => {
+    
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
     } else {
       setTheme("light");
     }
+    setMount(true);
   }, []);
 
   useEffect(() => {
@@ -57,6 +59,32 @@ const Header = () => {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const renderThemeChangerIcon = () => {
+    if (!mount) return null;
+
+    if (theme === "dark") {
+      return (
+        <button
+          type="button"
+          className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600"
+          onClick={handleThemeSwitch}
+        >
+          <HiOutlineSun fontSize={17} />
+        </button>
+      );
+    } else {
+      return (
+        <button
+          type="button"
+          className="bg-gray-200 p-2 rounded-md hover:ring-2 hover:ring-gray-300"
+          onClick={handleThemeSwitch}
+        >
+          <HiMoon fontSize={16} />
+        </button>
+      );
+    }
   };
 
   return (
@@ -82,12 +110,7 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex gap-5 items-center">
-            {/* <button
-              className="bg-green-200 p-4 rounded-3xl"
-              onClick={handleThemeSwitch}
-            >
-              Dark Mode
-            </button> */}
+            {renderThemeChangerIcon()}
             {cartIcons.map(({ icon, text, to }, i) => (
               <Link
                 to={to}
