@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="lg:bg-white bg-[#F3C5FF] overflow-hidden" id="home">
+    <section
+      className="lg:bg-white dark:lg:bg-slate-600 bg-[#F3C5FF] overflow-hidden"
+      id="home"
+    >
       <div className="container lg:py-10 pt-8">
         <div className="w-full flex lg:flex-row flex-col gap-4 items-center justify-between lg:h-[383px] bg-[#F3C5FF] lg:px-4 relative">
           <div className="flex flex-col gap-3 justify-start items-start flex-1 lg:pl-10 overflow-hidden">
@@ -17,7 +20,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: "-80px" }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, type: "tween" }}
-              className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
+              className="font-normal text-black dark:text-orange-700 leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
             >
               Exercise more and more with
               <span className="font-semibold"> MyShop. Number #1</span> trusted
@@ -26,7 +29,7 @@ const Hero = () => {
             <Button
               time={3}
               text="View More"
-              btnClass="min-w-[153px] bg-white"
+              btnClass="min-w-[153px] bg-white dark:bg-slate-600 dark:text-white"
             />
           </div>
           <div className="flex-1">
