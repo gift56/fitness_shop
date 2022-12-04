@@ -48,8 +48,7 @@ Interactive mode example
 
 ---
 
-## Tests
-
+## Test
 ---
 
 All the code is tested with the **unittest** module.
