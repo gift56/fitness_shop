@@ -60,7 +60,7 @@ const Wears = () => {
     },
   ];
   return (
-    <section className="bg-white">
+    <section className="bg-white overflow-hidden">
       <div className="container py-5 pb-8">
         <div className="flex flex-col items-start justify-start w-full gap-10">
           <Wear
@@ -69,6 +69,7 @@ const Wears = () => {
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
+                time={3}
                 text="Shop Now"
                 btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
               />
@@ -82,6 +83,7 @@ const Wears = () => {
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
+                time={3}
                 text="Shop Now"
                 btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
               />
@@ -98,6 +100,7 @@ const Wears = () => {
             details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sed sed pharetra dictum id mi at blandit."
             btn={
               <Button
+                time={3}
                 text="Shop Now"
                 btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
               />
