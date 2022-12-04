@@ -6,7 +6,6 @@ import { HiMoon, HiOutlineSun } from "react-icons/hi";
 
 const Header = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
-  const [mount, setMount] = useState(false);
   const [theme, setTheme] = useState(null);
   const scrollLinks = [
     {
@@ -40,38 +39,24 @@ const Header = () => {
     },
   ];
   useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+    setMount(true);
+  }, [theme]);
+
+  useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-    setMount(true);
   }, [theme]);
 
-  const renderThemeChangerIcon = () => {
-    if (!mount) return null;
-
-    if (theme === "dark") {
-      return (
-        <button
-          type="button"
-          className="bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:ring-2 hover:ring-gray-300 dark:hover:ring-gray-600"
-          onClick={() => setTheme("light")}
-        >
-          <HiOutlineSun fontSize={17} />
-        </button>
-      );
-    } else {
-      return (
-        <button
-          type="button"
-          className="bg-gray-200 p-2 rounded-md hover:ring-2 hover:ring-gray-300"
-          onClick={() => setTheme("dark")}
-        >
-          <HiMoon fontSize={16} />
-        </button>
-      );
-    }
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -97,7 +82,12 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex gap-5 items-center">
-            {renderThemeChangerIcon()}
+            <button
+              className="bg-green-200 p-4 rounded-3xl"
+              onClick={handleThemeSwitch}
+            >
+              Dark Mode
+            </button>
             {cartIcons.map(({ icon, text, to }, i) => (
               <Link
                 to={to}
