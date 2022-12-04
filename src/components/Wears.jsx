@@ -102,7 +102,7 @@ const Wears = () => {
               <Button
                 time={3}
                 text="Shop Now"
-                btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] border border-black"
+                btnClass="min-w-[228px] h-[60px] bg-[#C4C4C4] dark:bg-gray-600 dark:border-gray-300 dark:text-white border border-black"
               />
             }
             data={salesData}

@@ -62,7 +62,7 @@ const Wear = ({
                   initial={{ opacity: 0, x: "-30px" }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 2, type: "tween" }}
-                  className="text-black text-lg lg:text-xl font-medium"
+                  className="text-black dark:text-white text-lg lg:text-xl font-medium"
                 >
                   {name}
                 </motion.h3>
@@ -70,7 +70,7 @@ const Wear = ({
                   initial={{ opacity: 0, x: "-30px" }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 2, type: "tween" }}
-                  className="text-black text-lg lg:text-xl font-medium"
+                  className="text-black dark:text-white text-lg lg:text-xl font-medium"
                 >
                   {price}
                 </motion.p>
