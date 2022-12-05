@@ -10,6 +10,7 @@ import img8 from "../assets/card8Img.svg";
 import { BsHeart } from "react-icons/bs";
 import Button from "./button/Button";
 import { motion } from "framer-motion";
+import { cartCards } from "../utils/cartData";
 
 const CartCards = () => {
  
