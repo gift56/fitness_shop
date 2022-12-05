@@ -20,7 +20,7 @@ const Wear = ({
         <motion.h1
           initial={{ opacity: 0, x: "-60px" }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, type: "tween" }}
+          transition={{ duration: 1, type: "tween" }}
           className="text-black dark:text-white font-bold text-[56px] leading-[72px]"
         >
           {title}
@@ -28,7 +28,7 @@ const Wear = ({
         <motion.p
           initial={{ opacity: 0, x: "60px" }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, type: "tween" }}
+          transition={{ duration: 1, type: "tween" }}
           className="text-[19px] leading-[23px] text-black dark:text-white font-normal max-w-sm"
         >
           {details}
@@ -42,7 +42,7 @@ const Wear = ({
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 3, type: "tween" }}
+            transition={{ duration: 1, type: "tween" }}
             key={i}
             className={`flex justify-start lg:min-w-[30%] w-full items-center flex-col gap-5 bg-[#E1DADA] dark:bg-[#202136] pb-7 ${dataClasses}`}
           >
@@ -50,7 +50,7 @@ const Wear = ({
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 3, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={img}
                 alt={name}
                 className="w-full h-full max-w-full"
@@ -61,7 +61,7 @@ const Wear = ({
                 <motion.h3
                   initial={{ opacity: 0, x: "-30px" }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 2, type: "tween" }}
+                  transition={{ duration: 1, type: "tween" }}
                   className="text-black dark:text-white text-lg lg:text-xl font-medium"
                 >
                   {name}
@@ -69,7 +69,7 @@ const Wear = ({
                 <motion.p
                   initial={{ opacity: 0, x: "-30px" }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 2, type: "tween" }}
+                  transition={{ duration: 1, type: "tween" }}
                   className="text-black dark:text-white text-lg lg:text-xl font-medium"
                 >
                   {price}
