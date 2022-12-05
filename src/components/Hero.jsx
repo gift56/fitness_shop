@@ -19,7 +19,7 @@ const Hero = () => {
             <motion.h1
               initial={{ opacity: 0, x: "-80px" }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 2, type: "tween" }}
+              transition={{ duration: 1, type: "tween" }}
               className="font-normal text-black dark:text-orange-700 leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
             >
               Exercise more and more with
@@ -27,7 +27,7 @@ const Hero = () => {
               fitness tool website
             </motion.h1>
             <Button
-              time={3}
+              time={1}
               text="View More"
               btnClass="min-w-[153px] bg-white dark:bg-slate-600 dark:text-white"
             />
@@ -36,7 +36,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: "-50px" }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
               className="lg:absolute top-[-100px] right-[3rem] md:h-[500px] z-10 select-none"
             >
               <img
@@ -49,7 +49,7 @@ const Hero = () => {
               <motion.img
                 initial={{ opacity: 0, x: "100px" }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={balls1}
                 alt="/"
                 className="w-full h-full object-contain"
@@ -59,7 +59,7 @@ const Hero = () => {
               <motion.img
                 initial={{ opacity: 0, y: "100px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={balls2}
                 alt="/"
                 className="w-full h-full object-contain"
@@ -69,7 +69,7 @@ const Hero = () => {
               <motion.img
                 initial={{ opacity: 0, y: "30px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 3, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={balls3}
                 alt="/"
                 className="w-full h-full object-contain"
@@ -79,7 +79,7 @@ const Hero = () => {
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 4, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={balls4}
                 alt="/"
                 className="w-full h-full object-contain"
