@@ -34,7 +34,7 @@ const Testimonials = () => {
             <motion.div
               initial={{ opacity: 0, y: "-50px" }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
               className="lg:absolute top-[-55px] right-[3rem] md:h-[418px] z-10 select-none"
             >
               <img
@@ -47,7 +47,7 @@ const Testimonials = () => {
               <motion.img
                 initial={{ opacity: 0, x: "100px" }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={circle2}
                 alt="/"
                 className="w-full h-full object-contain"
@@ -57,7 +57,7 @@ const Testimonials = () => {
               <motion.img
                 initial={{ opacity: 0, y: "100px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 3, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={circle3}
                 alt="/"
                 className="w-full h-full object-contain"
@@ -67,7 +67,7 @@ const Testimonials = () => {
               <motion.img
                 initial={{ opacity: 0, y: "30px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 3, type: "tween" }}
+                transition={{ duration: 1, type: "tween" }}
                 src={circle1}
                 alt="/"
                 className="w-full h-full object-contain"
