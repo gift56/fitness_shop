@@ -1,12 +1,4 @@
 import React from "react";
-import img1 from "../assets/cardImg.svg";
-import img2 from "../assets/card2Img.svg";
-import img3 from "../assets/card3Img.svg";
-import img4 from "../assets/card4Img.svg";
-import img5 from "../assets/card5Img.svg";
-import img6 from "../assets/card6Img.svg";
-import img7 from "../assets/card7Img.svg";
-import img8 from "../assets/card8Img.svg";
 import { BsHeart } from "react-icons/bs";
 import Button from "./button/Button";
 import { motion } from "framer-motion";
