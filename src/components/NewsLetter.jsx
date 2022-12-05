@@ -13,7 +13,7 @@ const NewsLetter = () => {
             <motion.h1
               initial={{ opacity: 0, y: "-30px" }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, type: "tween" }}
+              transition={{ duration: 1, type: "tween" }}
               className="font-normal text-black leading-[40px] text-[25px] md:text-[33px] text-left lg:max-w-[503px] w-full"
             >
               Join Our News Letter
@@ -21,7 +21,7 @@ const NewsLetter = () => {
             <motion.p
               initial={{ opacity: 0, x: "-30px" }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 3, type: "tween" }}
+              transition={{ duration: 1, type: "tween" }}
               className="text-[19px] leading-[23px] text-black font-normal max-w-sm"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit
@@ -38,7 +38,7 @@ const NewsLetter = () => {
             <motion.input
               initial={{ opacity: 0, x: "-50px" }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 3, type: "tween" }}
+              transition={{ duration: 1, type: "tween" }}
               type="text"
               name="newsletter"
               value={newsLetter}
@@ -47,7 +47,7 @@ const NewsLetter = () => {
               className="h-[55px] outline-none border-none lg:w-[60%] w-full bg-white dark:bg-slate-700 dark:text-white pl-4 text-xl"
             />
             <Button
-              time={3}
+              time={1}
               text="Subscribe"
               btnClass="bg-[#FFBC96] dark:bg-slate-500 dark:text-white min-w-[156px] h-[55px]"
             />
