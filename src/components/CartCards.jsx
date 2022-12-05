@@ -77,7 +77,7 @@ const CartCards = () => {
             className="w-[45%] bg-[#E5E5E5] h-[2px]"
           ></motion.div>
           <Button
-            time={3}
+            time={1}
             text="View More"
             btnClass="bg-white border border-[#AAFAB2] min-w-[221px] hover:bg-[#AAFAB2] mx-3"
           />
