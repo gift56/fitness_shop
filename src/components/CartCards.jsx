@@ -72,7 +72,7 @@ const CartCards = () => {
             <motion.div
               initial={{ opacity: 0, x: opacity(i) }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 2, type: "tween" }}
+              transition={{ duration: 1, type: "tween" }}
               whileHover={{ scale: 1.02 }}
               key={i}
               className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-600 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
@@ -81,7 +81,7 @@ const CartCards = () => {
                 <motion.img
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 2, type: "tween" }}
+                  transition={{ duration: 1, type: "tween" }}
                   src={img}
                   alt={title}
                   className="w-full h-full"
@@ -91,7 +91,7 @@ const CartCards = () => {
                 <motion.h2
                   initial={{ opacity: 0, x: "20px" }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 3, type: "tween" }}
+                  transition={{ duration: 1, type: "tween" }}
                   className="font-medium text-xl leading-[25px] text-black dark:text-white"
                 >
                   {title}
@@ -99,7 +99,7 @@ const CartCards = () => {
                 <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  transition={{ duration: 4, type: "tween" }}
+                  transition={{ duration: 1, type: "tween" }}
                   className="font-medium text-xl text-black leading-[25px] dark:text-white"
                 >
                   {rate}
@@ -121,7 +121,7 @@ const CartCards = () => {
           <motion.div
             initial={{ opacity: 0, x: "-100px" }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 3, type: "tween" }}
+            transition={{ duration: 1, type: "tween" }}
             className="w-[45%] bg-[#E5E5E5] h-[2px]"
           ></motion.div>
           <Button
@@ -132,7 +132,7 @@ const CartCards = () => {
           <motion.div
             initial={{ opacity: 0, x: "100px" }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 3, type: "tween" }}
+            transition={{ duration: 1, type: "tween" }}
             className="w-[45%] bg-[#E5E5E5] h-[2px]"
           ></motion.div>
         </div>
