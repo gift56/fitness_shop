@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { cartCards } from "../utils/cartData";
 
 const CartCards = () => {
- 
   const opacity = (id) => {
     if (id === 0 || id === 4) {
       return "-150px";
@@ -27,7 +26,7 @@ const CartCards = () => {
               transition={{ duration: 1, type: "tween" }}
               whileHover={{ scale: 1.02 }}
               key={i}
-              className="sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-600 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
+              className="p-4 sm:w-[332px] w-full shadow-large bg-[#FAFAFA] dark:bg-slate-600 flex flex-col gap-4 items-center justify-center py-3 hover:cursor-pointer"
             >
               <div className="sm:w-fit sm:h-fit w-full h-full">
                 <motion.img
