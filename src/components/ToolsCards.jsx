@@ -30,7 +30,7 @@ const ToolsCards = () => {
               transition={{ duration: 1, type: "tween" }}
               whileHover={{ scale: 1.02 }}
               key={i}
-              className="lg:w-[50%] w-full bg-[#FAFAFA] dark:bg-slate-600 shadow-large lg:h-[301px] rounded-xl flex flex-col-reverse lg:flex-row items-center justify-between gap-2 cursor-pointer"
+              className="lg:w-[50%] w-full bg-[#FAFAFA] dark:bg-slate-600 shadow-large lg:h-[301px] rounded-xl flex flex-col-reverse lg:flex-row items-center justify-between gap-2 cursor-pointer p-4"
             >
               <div className="flex flex-col justify-between gap-4 lg:gap-0 items-start h-full overflow-hidden">
                 <motion.h2
